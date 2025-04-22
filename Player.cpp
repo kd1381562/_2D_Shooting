@@ -80,8 +80,7 @@ void C_Player::Update()
 void C_Player::Draw()
 {
 	
-	SHADER.m_spriteShader.SetMatrix(m_mat);
-	SHADER.m_spriteShader.DrawTex(m_pTex, Math::Rectangle(0, 0, 64, 64), 1.0f);
+	 
 	
 }
 

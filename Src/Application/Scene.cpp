@@ -2,10 +2,12 @@
 #include "Scene.h"
 #include"Player.h"
 #include"Enemy.h"
+#include"Bullet.h"
 void Scene::Draw2D()
 {
 	m_player.Draw();
 	m_enemy.Draw();
+	m_bullet.Draw();
 }
 
 void Scene::Update()
@@ -13,6 +15,8 @@ void Scene::Update()
 	m_player.Update();
 	m_player.Action();
 	m_enemy.Update();
+	m_bullet.Update();
+	
 }
 
 void Scene::Init()
@@ -20,6 +24,7 @@ void Scene::Init()
 	
 	// âÊëúÇÃì«Ç›çûÇ›èàóù
 	m_player.SetOwner(this);
+	
 
 	
 
@@ -32,6 +37,9 @@ void Scene::Init()
 	m_enemy.Init();
 	m_enemy.SetTex(&m_enemyTex);
 	
+	m_bulletTex.Load("Texture/Bullet.png");
+	m_bullet.Init();
+	m_bullet.SetTex(&m_bulletTex);
 }
 
 void Scene::Release()
@@ -40,6 +48,7 @@ void Scene::Release()
 	
 	m_playerTex.Release();
 	m_enemyTex.Release();
+	m_bulletTex.Release();
 
 }
 

@@ -15,7 +15,7 @@ public:
 
 	void Draw();
 
-	void SetTex(KdTexture* pTex) { m_eTex = pTex; }
+	void SetTex(KdTexture* eTex) { m_eTex = eTex; }
 
 	void SetPos(Math::Vector2 Pos) { m_pos = Pos; }
 
