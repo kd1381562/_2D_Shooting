@@ -10,7 +10,7 @@ class Application
 // メンバ
 public:
 
-	int m_test = 1;
+	
 
 	// アプリケーション実行
 	void Execute();

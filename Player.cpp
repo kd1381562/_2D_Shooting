@@ -31,25 +31,30 @@ void C_Player::Action()
 		m_move.x -= MovePos;
 		m_scaleX = -1.0f;
 	}
-	if (GetAsyncKeyState('D') & 0x8000) {
+	if (GetAsyncKeyState('D') & 0x8000) 
+	{
 		m_move.x += MovePos;
 		m_scaleX = 1.0f;
 	}
-	if (GetAsyncKeyState('W') & 0x8000) {
+	if (GetAsyncKeyState('W') & 0x8000) 
+	{
 		m_move.y += MovePos;
 		m_scaleY = -1.0f;
 	}
-	if (GetAsyncKeyState('S') & 0x8000) {
+	if (GetAsyncKeyState('S') & 0x8000) 
+	{
 		m_move.y -= MovePos;
 		m_scaleY = 1.0f;
 	}
 	
-	if (GetAsyncKeyState(VK_SPACE) & 0x8000) {
+	if (GetAsyncKeyState(VK_RETURN) & 0x8000)
+	{
 		 
 		
 	}
 
-	if (GetAsyncKeyState(VK_SHIFT) & 0x8000) {
+	if (GetAsyncKeyState(VK_SHIFT) & 0x8000)
+	{
 		m_move.y -= MovePos;
 		m_scaleY = 1.0f;
 	}
