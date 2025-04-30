@@ -8,6 +8,7 @@ void Scene::Draw2D()
 	m_player.Draw();
 	m_enemy.Draw();
 	m_bullet.Draw();
+	m_haikei.Draw();
 }
 
 void Scene::Update()
@@ -16,6 +17,7 @@ void Scene::Update()
 	m_player.Action();
 	m_enemy.Update();
 	m_bullet.Update();
+	m_haikei.Update();
 	
 }
 
@@ -40,6 +42,10 @@ void Scene::Init()
 	m_bulletTex.Load("Texture/Bullet.png");
 	m_bullet.Init();
 	m_bullet.SetTex(&m_bulletTex);
+
+	m_haikeiTex.Load("Texture/haikei.png");
+	m_haikei.Init();
+	m_haikei.SetTex(&m_haikeiTex);
 }
 
 void Scene::Release()
@@ -49,6 +55,7 @@ void Scene::Release()
 	m_playerTex.Release();
 	m_enemyTex.Release();
 	m_bulletTex.Release();
+	m_haikeiTex.Release();
 
 }
 

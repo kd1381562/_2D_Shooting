@@ -3,11 +3,12 @@ class C_Bullet
 {
 public:
 
-	C_Bullet();
-	~C_Bullet();
+	C_Bullet() {}
+	~C_Bullet() {}
 	void Init();
 	void Release();
 	void Update();
+	void Action();
 	void Draw();
 
 

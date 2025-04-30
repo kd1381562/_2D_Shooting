@@ -7,7 +7,7 @@ void C_Enemy::Init()
 
 	m_scaleX = 1;
 	m_alive = true;
-	m_moveCnt = 60;
+	m_moveCnt = 100;
 
 
 }
@@ -18,12 +18,12 @@ void C_Enemy::Action()
 
 
 
-	m_moveCnt--;
+	m_moveCnt=0;
 
 	if (m_moveCnt < 0)
 	{
 		//ˆÚ“®•ûŒü‚Ì”½“]
-		m_moveCnt = 60;
+		m_moveCnt = 10;
 		m_move.x *= -1;
 		m_scaleX *= -1;
 	}

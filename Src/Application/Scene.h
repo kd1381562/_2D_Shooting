@@ -16,8 +16,14 @@ private:
 	C_Bullet m_bullet;
 	KdTexture m_bulletTex;
 
+	C_Bullet m_haikei;
+	KdTexture m_haikeiTex;
+
+	bool Bullet_Flg;
+
 // テクスチャ ・・・ 画像データ
 	KdTexture charaTex;
+	KdTexture haikeiTex;
 
 
 	
