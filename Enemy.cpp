@@ -15,9 +15,6 @@ void C_Enemy::Init()
 void C_Enemy::Action()
 {
 	
-
-
-
 	m_moveCnt=0;
 
 	if (m_moveCnt < 0)

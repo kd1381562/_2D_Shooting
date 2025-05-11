@@ -28,6 +28,8 @@ public:
 
 	Math::Vector2 GetPos() { return m_pos; }
 
+
+
 	Math::Vector2 GetFuturePos() { return m_pos + m_move; }
 
 private:
@@ -55,7 +57,7 @@ private:
 
 
 	//¶‘¶ƒtƒ‰ƒO
-	bool m_alive;
+	bool m_alive;  
 
 	int m_moveCnt;
 

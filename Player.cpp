@@ -1,7 +1,6 @@
 #include "Player.h"
 
 
-
 C_Player::C_Player()
 {
 }
@@ -15,7 +14,7 @@ void C_Player::Init()
 	m_pos = { 0,0 };
 	m_move = { 0,0 };
 	m_scaleX = 1.0f;
-	//m_alive = true;
+	m_alive = true;
 	m_jump = false;
 	
 	
@@ -58,7 +57,6 @@ void C_Player::Action()
 		m_move.y -= MovePos;
 		m_scaleY = 1.0f;
 	}
-
 	
 }
 
@@ -96,5 +94,13 @@ void C_Player::MapHitY(float posY, float moveY, bool Jump)
 {
 	m_pos.y = posY;
 	m_move.y = moveY;
-	m_jump = Jump;
+
+}
+
+bool C_Player::Alive(bool alive)
+{
+	if (m_alive)
+	{
+		return false;
+	}
 }

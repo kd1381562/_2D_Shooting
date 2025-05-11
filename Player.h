@@ -1,11 +1,13 @@
 #pragma once
 
 
-class Scene;
+
+//class Bullet; 
+
 class C_Player {
 public:
-	C_Player();
-	~C_Player();
+	C_Player(){}
+	~C_Player() {}
 
 	void Init();
 	void Action();
@@ -23,7 +25,7 @@ public:
 	void SetOwner(Scene* hOwner) { m_pOwner = hOwner; }
 
 
-
+	bool Alive(bool alive);
 
 
 private:
@@ -43,5 +45,9 @@ private:
 	bool m_jump;					//ジャンプフラグ
 	bool m_goolflg;
 	Scene* m_pOwner;
+
+	float playerX;
+	float playerY;
+	
 };
 

@@ -25,6 +25,13 @@ public:
 
 	Math::Vector2 GetFuturePos() { return m_pos + m_move; }
 
+	//íe
+	static const int bulletNum = 50000;
+	float bulletX[bulletNum];
+	float bulletY[bulletNum];
+	int bulletFlg[bulletNum];
+	int shotWait;
+
 
 private:
 
@@ -43,10 +50,8 @@ private:
 	float m_scaleY;					//â°ägëÂó¶
 
 
-	bool m_alive;					//ê∂ë∂ÉtÉâÉO
 
 
 	
-
 
 };

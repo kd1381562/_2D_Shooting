@@ -247,6 +247,9 @@ void Application::Execute()
 			count = 0;
 		}
 
+		//タイトルバーにFPS表示
+		std::string titleBar = "作品名　FPS:" + std::to_string(m_fps);
+		SetWindowTextA(m_window.GetWndHandle(), titleBar.c_str());
 	}
 
 	// ゲーム解放

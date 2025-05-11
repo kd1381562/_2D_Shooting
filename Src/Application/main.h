@@ -11,7 +11,7 @@ class Application
 public:
 
 	
-
+     
 	// アプリケーション実行
 	void Execute();
 

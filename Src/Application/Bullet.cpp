@@ -19,7 +19,7 @@ void C_Bullet::Update()
 
 	//çsóÒçÏê¨ÅEçáê¨
 
-	m_scaleMat = Math::Matrix::CreateScale(m_scaleX, m_scaleY, 1.0f);
+	m_scaleMat = Math::Matrix::CreateScale(m_scaleX, m_scaleY, 1.0f);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 	m_transMat = Math::Matrix::CreateTranslation(m_pos.x, m_pos.y, 0.0f);
 
 	m_mat = m_scaleMat * m_transMat;

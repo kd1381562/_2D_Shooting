@@ -1,11 +1,11 @@
 #pragma once
 
-class C_Result
+class C_Setumei
 {
 public:
 
-	C_Result() {}
-	~C_Result() {}
+	C_Setumei() {}
+	~C_Setumei() {}
 
 	void Draw();
 	void Init();
@@ -27,4 +27,4 @@ private:
 
 
 
-};
+}; 
